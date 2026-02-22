@@ -1,0 +1,3 @@
+PDF and QR-code generator
+run the python server: serverV02.py
+open the android application 

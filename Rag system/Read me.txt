@@ -1,0 +1,3 @@
+Rag system part
+-run the chat api script to connect it with android app interface
+-change the android api to match the ip address of the RAG system device
