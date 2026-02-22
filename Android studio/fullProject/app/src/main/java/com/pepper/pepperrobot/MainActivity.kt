@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(), RobotLifecycleCallbacks {
     // Point to your Python API Endpoint
     private val RAG_SERVER_URL = "http://192.168.8.99:8000/chat"
 
-    private val OPENAI_API_KEY = "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"
+    private val OPENAI_API_KEY = "Your Open-AI key here"
     private val OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 
     private val client = OkHttpClient.Builder()
