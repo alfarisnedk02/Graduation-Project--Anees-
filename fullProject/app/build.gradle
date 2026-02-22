@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "com.softbankrobotics.qisdktutorials"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode VERSION_CODE.toInteger()
+        versionName VERSION_NAME
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // local libs
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // support
+    implementation "androidx.appcompat:appcompat:$androidx_version"
+    implementation "androidx.recyclerview:recyclerview:$androidx_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    // tests
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Pepper
+    implementation 'com.aldebaran:qisdk:1.7.5'
+    implementation 'com.aldebaran:qisdk-design:1.7.5'
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // Use version 3.12.12 (Guaranteed to work on Pepper API 23)
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.12'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+}

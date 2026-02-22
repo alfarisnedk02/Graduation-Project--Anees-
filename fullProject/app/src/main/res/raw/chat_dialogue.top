@@ -1,0 +1,18 @@
+topic: ~chat_dialogue()
+
+# Concepts
+concept:(hello) [hello hi "good morning" "hey there" "hey pepper"]
+concept:(follow) ["follow me" "please follow me" "come here" "come with me"]
+concept:(how_are_you) ["how are you" "how is it going"]
+
+# 1. Greetings
+u:(~hello) ^start(animations/Stand/Gestures/Hey_1) Hello! I am listening.
+
+# 2. Small Talk
+u:(~how_are_you) ^start(animations/Stand/Gestures/Enthusiastic_5) I am doing great! Thanks for asking.
+
+# 3. Follow Command (Sets a variable that our code watches)
+u:(~follow) ^start(animations/Stand/Gestures/You_1) Okay, I will follow you now. $should_follow=1
+
+# 4. Catch-all (So he keeps listening even if he doesn't understand)
+u:(e:Dialog/NotUnderstood) ^start(animations/Stand/Gestures/IDontKnow_1) I heard you, but I am not sure what that means.

@@ -1,0 +1,12 @@
+topic: ~commands()
+
+# --- HARDCODED COMMANDS (Processed locally for speed) ---
+u:(["follow me" "come here"]) OK, following. $command=follow
+u:(["stop" "wait here"]) Stopping. $command=stop
+u:(["raise your hand"])Raise. $command=raise
+u:(["look left"]) Looking left. $command=left
+u:(["look right"]) Looking right. $command=right
+
+# --- AI CATCH-ALL ---
+# If it's not a command, capture it as 'input' to send to OpenAI
+u:(_*) $input=$1
