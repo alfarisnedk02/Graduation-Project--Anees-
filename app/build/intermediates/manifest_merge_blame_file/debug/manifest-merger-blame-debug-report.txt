@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.softbankrobotics.qisdktutorials"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:6:22-64
+12
+13    <uses-feature
+13-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:34:5-88
+14        android:name="com.softbank.hardware.pepper"
+14-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:34:19-62
+15        android:required="true" />
+15-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:34:63-86
+16
+17    <uses-permission android:name="com.aldebaran.permission.ROBOT" />
+17-->[com.aldebaran:qisdk:1.7.5] C:\Users\Faris\AndroidStudioProjects\fullProject\gradle\wrapper\caches\transforms-2\files-2.1\154135718fa5ca6b21e173c6f0ed7fdf\jetified-qisdk-1.7.5\AndroidManifest.xml:10:5-70
+17-->[com.aldebaran:qisdk:1.7.5] C:\Users\Faris\AndroidStudioProjects\fullProject\gradle\wrapper\caches\transforms-2\files-2.1\154135718fa5ca6b21e173c6f0ed7fdf\jetified-qisdk-1.7.5\AndroidManifest.xml:10:22-67
+18
+19    <application
+19-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:8:5-32:19
+20        android:allowBackup="true"
+20-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:10:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:17:9-77
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:11:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:12:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:13:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:14:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.PepperRobot"
+29-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:15:9-49
+30        android:usesCleartextTraffic="true" >
+30-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:9:9-44
+31        <activity
+31-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:19:9-25:20
+32            android:name="com.pepper.pepperrobot.HomeActivity"
+32-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:19:19-47
+33            android:exported="true" >
+33-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:20:13-36
+34            <intent-filter>
+34-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:21:13-24:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:22:17-69
+35-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:22:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:23:17-77
+37-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:23:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:27:9-28:40
+41            android:name="com.pepper.pepperrobot.MainActivity"
+41-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:27:19-47
+42            android:exported="false" />
+42-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:28:13-37
+43        <activity android:name="com.pepper.pepperrobot.QrActivity" />
+43-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:30:9-48
+43-->C:\Users\Faris\AndroidStudioProjects\fullProject\app\src\main\AndroidManifest.xml:30:19-45
+44
+45        <meta-data
+45-->[com.aldebaran:qisdk:1.7.5] C:\Users\Faris\AndroidStudioProjects\fullProject\gradle\wrapper\caches\transforms-2\files-2.1\154135718fa5ca6b21e173c6f0ed7fdf\jetified-qisdk-1.7.5\AndroidManifest.xml:16:9-18:53
+46            android:name="qisdk_version"
+46-->[com.aldebaran:qisdk:1.7.5] C:\Users\Faris\AndroidStudioProjects\fullProject\gradle\wrapper\caches\transforms-2\files-2.1\154135718fa5ca6b21e173c6f0ed7fdf\jetified-qisdk-1.7.5\AndroidManifest.xml:17:13-41
+47            android:value="@string/qisdk_version" />
+47-->[com.aldebaran:qisdk:1.7.5] C:\Users\Faris\AndroidStudioProjects\fullProject\gradle\wrapper\caches\transforms-2\files-2.1\154135718fa5ca6b21e173c6f0ed7fdf\jetified-qisdk-1.7.5\AndroidManifest.xml:18:13-50
+48    </application>
+49
+50</manifest>

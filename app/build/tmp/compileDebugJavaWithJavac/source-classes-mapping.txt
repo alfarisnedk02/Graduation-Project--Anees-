@@ -1,0 +1,2 @@
+com/pepper/pepperrobot/BuildConfig.java
+ com.pepper.pepperrobot.BuildConfig
