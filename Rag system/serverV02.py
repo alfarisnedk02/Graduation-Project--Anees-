@@ -18,7 +18,7 @@ from reportlab.lib.utils import ImageReader
 from reportlab.lib.enums import TA_LEFT
 
 # --- CONFIGURATION ---
-NGROK_AUTH_TOKEN = '36RN667ipn4maGcfXiKSZ217hRo_84XoLApUQSSxpgoi3n6r5' 
+NGROK_AUTH_TOKEN = 'YOUR NGROK TOKEN HERE' 
 NGROK_REGION = 'us'
 PORT = 5050  # Changed from 5000 to 5050
 
